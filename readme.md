@@ -11,3 +11,17 @@ When implementing a new feature or fixing a bug, please create a new pull reques
 ## First setup
 
 **[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+
+### Start the docker container
+
+```
+docker-compose up
+```
+
+This will sipn up the backend, frontend and the database.
+
+Once everything loads, test the backend by visiting [/api/ping](https://obelusfamily-anythink-market-qdm9d-5x79wr7rxjxc49v4-3000.githubpreview.dev/api/ping)
+
+If everything is working properly, you’ll be able to create a new user on [/register](https://obelusfamily-anythink-market-qdm9d-5x79wr7rxjxc49v4-3001.githubpreview.dev/register)
+
+You can also run commands on docker images using `docker exec`
